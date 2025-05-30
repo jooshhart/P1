@@ -1,14 +1,12 @@
-hello = "This is a for loop example."
-print(hello)
+sentence = "this is a for loop example and this loop is simple"
+word_counts = {}
 
-word_to_find = "loop"
-found= False
+for word in sentence.split():
+    if word in word_counts:
+        word_counts[word] += 1
+    else:
+        word_counts[word] = 1
 
-for word in hello.split():
-    if word == word_to_find:
-        found = True
-        print(f'Found the word: "{word_to_find}"')
-        break
-
-if not found:
-    print(f'Word "{word_to_find}" not found.')
+print("Word counts:")
+for word, count in word_counts.items():
+    print(f'"{word}": {count}')
