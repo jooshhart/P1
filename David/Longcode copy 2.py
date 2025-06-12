@@ -451,44 +451,7 @@ while game=="on":
                     while done=="false":
                         Option = input ("attack him or talk to him 1=attack 2=talk\n")
                         if (Option=="1"):
-                            done="true"
-                            oldmancombat="true"
-                            oldhp=1
-                            init_player = (DEX-10)+random.choice(D20); {"1":1,"2":2,"3":3,"4":4,"5":5,"6":6,"7":7,"8":8,"9":9,"10":10,"11":11,"12":12,"13":13,"14":14,"15":15,"16":16,"17":17,"18":18,"19":19,"20":20}
-                            init_creature = -2+random.choice(D20); {"1":1,"2":2,"3":3,"4":4,"5":5,"6":6,"7":7,"8":8,"9":9,"10":10,"11":11,"12":12,"13":13,"14":14,"15":15,"16":16,"17":17,"18":18,"19":19,"20":20}
-                            print (f"your initiative is {init_player}.")
-                            print (f"the old man's initiative is {init_creature}.")
-                            olddamage=1
-                            creaturedamage = max(olddamage-DR,0)
-                            if init_player>=init_creature:
-                                print("you go first")
-                                yourturn="true"
-                            else:
-                                print (f"he goes first, and punches you for {creaturedamage} damage")
-                                HP=HP-creaturedamage
-                                print (f"you are now at {HP} hp, and it is your turn")
-                                if HP>0:
-                                    yourturn="true"
-                                else:
-                                    print ("you died from a old man on the first turn. You lost and you are terrible.")
-                            while HP>0 and oldhp>0:
-                                input (f"your damage is {attack} + 1d4. Click enter to roll")
-                                damage_real = attack + random.choice(D4); {"1":1,"2":2,"3":3,"4":4}
-                                oldhp=min(oldhp-damage_real,oldhp)
-                                if oldhp>0:
-                                    print ("the old man is at",oldhp, "hp, and it is your turn")
-                                    olddamage=1
-                                    creaturedamage = max(olddamage-DR,0)
-                                    HP=HP-creaturedamage
-                                    print (f"the old man did {creaturedamage} damage, and you are at {HP} hp.")
-                                else:
-                                    print ("the old man is at",oldhp,"hp, you win the fight")
-                                if HP<=0:
-                                    print ("you died, you must have cheated!")
-                                    Breakgame="true"
-                            if Breakgame!="true":
-                                print ("you grab the awesome map from his corpse")
-                                havemap="true"
+                           combat("old man","punches",1,0,-1,D4,0,0,1,HP,attack,DEX,attacks)
                         elif (Option=="2"):
                             print ("the old man talks to you and acts like nothing happend")
                             oldmantalk="true"
@@ -611,7 +574,7 @@ while game=="on":
                     print ("you died, you lose")
         if dragon=="true":
             print ("after south north for about 12 miles you see a brass dragon in the mouth of a cave. He looks like this, and is 10 feet tall")
-            #printdragon()
+            printdragon()
             come = input ("He sees you, but appears to be waiting for you. Will you approch him?\n(1) yes\n(2) no\n")
             if come=="1":
                 x=input ("What do you want? You aren't zack multipleboys, are you?\n(1) I am\n(2) I'm not\n")
@@ -666,6 +629,7 @@ while game=="on":
                 input ("you do not go in his lair\n you finished the game (the nah I'm too scared way)")
         if dragonfight=="true":
             combat("brass dragon","attacks",200,0,10,D10,0,10,3,HP,attack,DEX,attacks)
+            "so combat() can change the class things, but not variables outside of itself?"
             if HP>0:
                 if mercy=="non-zack lies":
                     print("A little while later, you wake up. You are pinned to the floor by the dragon, and he says\nYou have quite high bravery saying that you are zack\nI respect that about you...\nIf you want to be my servant, you are qualified.")
@@ -732,21 +696,20 @@ while game=="on":
             e=input ("Which race do you want to know about?\n(1) human\n(2) elf\n(3) dwarf\n(4) orc\n(5) grandparian\n") 
             if (e=="1"):
                 print ("A human is average at everything, a human can choose any class and gets no stat bonus/reductions")
-                print ("                                                                                                                         ")
-                print ("                                    █████████                                                                             ")
-                print ("                                   █  █   █  █                                                                            ")
-                print ("                                  █   _____   █                                                                           ")
-                print ("                                   █         █                                                                            ")
-                print ("                                    █████████                                                                             ")
-                print ("                                       █                                                                                  ")
-                print ("                               █████████████████                                                                          ")
-                print ("                                       █                                                                                  ")
-                print ("                                       █                                                                                  ")
-                print ("                                       █                                                                                  ")
-                print ("                                      █ █                                                                                 ")
-                print ("                                     █   █                                                                                ")
-                print ("                                    █     █                                                                               ")
-                print ("                                   █       █                                                                              ")
+                print ("                         █████████                   ")
+                print ("                        █  █   █  █                  ")
+                print ("                       █   _____   █                 ")
+                print ("                        █         █                  ")
+                print ("                         █████████                   ")
+                print ("                             █                       ")
+                print ("                     █████████████████               ")
+                print ("                             █                       ")
+                print ("                             █                       ")
+                print ("                             █                       ")
+                print ("                            █ █                      ")
+                print ("                           █   █                     ")
+                print ("                          █     █                    ")
+                print ("                         █       █                   ")
             elif (e=="2"):
                 print ("An elf is tall and skiny with pointy ears. They live for a long time (about 160 years), do not like dwarves, and are never sorcerers or barbarians. Their stat changes are (-1,+1,0,0,0,+1)")
                 print ("                                                                                                                          ")
@@ -888,8 +851,6 @@ while game=="on":
         input ("I did not know where else to put the unfinshed art, so you get to see it now. Click enter.")
         os.system('cls')
 if wanttoseejunk=="true":
-
-
 
 
 

@@ -10,9 +10,8 @@ class Library:
         else:
             for idx, book in enumerate(self.books, 1):
                 status = "Checked out" if book.checked_out else "Available"
-                print(f"{idx}. {book} - {status}")
-
-    def save_books(self, filename):
+                print(f"{idx}. {book} - {status}") 
+    def save_books(self, filename): #a command called "open is used, and filename is used"
         with open(filename, "w") as f:
             for book in self.books:
                 # Format: title|author|checked_out
