@@ -14,7 +14,7 @@ A step-by-step guide to install the essential tools for development: VS Code, Py
 2. Click on **Download for Windows/Mac/Linux**.
 3. Run the installer and follow the prompts.
 
-![VS Code Download](images/vscode-download.png)
+![VS Code Download](images/VSCodeInstall.png)
 > *Image: Clicking the "Download for Windows" button on the VS Code website*
 
 ---
@@ -29,7 +29,7 @@ A step-by-step guide to install the essential tools for development: VS Code, Py
 2. Click the latest version for your OS.
 3. Make sure to check **"Add Python to PATH"** before installing.
 
-![Python Install](images/python-installer.png)
+![Python Install](images/PythonInstall.png)
 > *Image: Important step - adding Python to PATH*
 
 ---
@@ -57,9 +57,11 @@ A step-by-step guide to install the essential tools for development: VS Code, Py
 ### 🖼️ Installation Steps:
 1. Download the Git installer for your OS.
 2. Run the setup and keep the default options (recommended).
+3. Open git.
+4. Input these each of these two with your own github username and email.
 
-![Git Install](images/git-install.png)
-> *Image: Git installation wizard*
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
 
 ---
 
