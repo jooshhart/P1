@@ -55,7 +55,7 @@ A step-by-step guide to install the essential tools for development: VS Code, Py
 1. Download the Git installer for your OS.
 2. Run the setup and keep the default options (recommended).
 3. Open git.
-4. Input these each of these two with your own github username and email.
+4. Input each of these two with your own github username and email.
 
 #### git config --global user.name "John Doe"
 #### git config --global user.email johndoe@example.com
