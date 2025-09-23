@@ -71,10 +71,29 @@ A step-by-step guide to install the essential tools for development: VS Code, Py
 
 ---
 
-## 📦 Tips
+## 6. Tips and Best Practices
 
-- Use VS Code extensions like Python, GitLens.
-- Set up SSH for GitHub to push code without entering credentials every time.
-- Make sure to restart VS Code after installations.
+- Use useful VS Code extensions like **Python**, **GitLens**, and **Prettier**.
+- Set up **SSH keys** for GitHub so you can push code without typing your password each time.
+- Restart VS Code after installing new tools to ensure everything loads correctly.
+- Use the terminal in VS Code: `Ctrl + ~` to toggle it quickly.
+
+---
+
+## 7. Fork This Repository 🔁
+
+If you'd like to contribute to this repository or create your own version:
+
+### 👤 Step 1: Submit Your GitHub Username
+Click the link below to submit your GitHub username. Once submitted, you'll be added as a collaborator (or reviewer):
+
+👉 [Submit GitHub Username](https://github.com/jooshhart/P1/issues/new?title=Invite+me+to+the+repo&body=Hi%2C+please+invite+me+to+collaborate+on+this+repository!+My+GitHub+username+is%3A+)
+
+### 🍴 Step 2: Fork This Repo
+1. Click the **Fork** button in the top-right corner of this page.
+2. This will create a copy of the repository under your GitHub account.
+3. Clone it to your machine:
+   ```bash
+   git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_FORKED_REPO.git
 
 ---
