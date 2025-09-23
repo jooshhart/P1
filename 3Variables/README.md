@@ -107,4 +107,4 @@ F-strings are the easiest and most powerful way to build sentences with variable
 - Use `print()` to show variable values.
 
 ## Homework
-Make sure to create a program similar to the last. However, this time it needs to use inputs to gain the information. It needs to end with a print that gives a sentence greeting the user and explaining who they are. This time it should only require name, age, and height. Comments will still be required. WHen checking the terminal, you will be writing into the terminal when it asks for inputs.
+Make sure to create a program similar to the last. However, this time it needs to use inputs to gain the information. It needs to end with a print that gives a sentence greeting the user and explaining who they are. This time it should only require name, age, and height. Comments will still be required. When checking the terminal, you will be writing into the terminal when it asks for inputs. Make sure to send me the link to your homework in order to submit it.
