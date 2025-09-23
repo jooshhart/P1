@@ -1,8 +1,4 @@
 # Syntax and Comments
-
-```python
-
-```
 ## Strings
 Strings Are a set of text that are held in between '' or "".
 ```python
