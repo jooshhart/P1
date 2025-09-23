@@ -49,6 +49,7 @@ Comments are used in order to specify in code what the code does and why. This i
 ```python
 # This is a short comment
 ```
+Usually, a short comment is used to help describe the part of the program file or a specific variable or print.
 ### Long Comment (multi-line)
 ```python
 """
@@ -57,6 +58,7 @@ It can span multiple lines.
 Useful for documentation or explanations.
 """
 ```
+Usually, a long comment is used to describe the program file itself.
 ### Comment Highlighted
 ```python
 # TODO: This is a highlighted comment for tasks
