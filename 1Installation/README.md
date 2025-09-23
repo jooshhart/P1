@@ -77,6 +77,7 @@ A step-by-step guide to install the essential tools for development: VS Code, Py
 - Set up **SSH keys** for GitHub so you can push code without typing your password each time.
 - Restart VS Code after installing new tools to ensure everything loads correctly.
 - Use the terminal in VS Code: `Ctrl + ~` to toggle it quickly.
+### THe python extension is required in order tyo be able to test your code
 
 ---
 
@@ -95,5 +96,10 @@ Click the link below to submit your GitHub username. Once submitted, you'll be a
 3. Clone it to your machine:
    ```bash
    git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_FORKED_REPO.git
+   ```
+You can also copy it through the code button which gives the url you need. Then you just need to type git clone and then space, ctrl or Cmd + v.
+
+## Homework 
+You will need to be able to send me a link to your forked github repository in google, so I can look at it myself.
 
 ---
