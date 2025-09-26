@@ -1,4 +1,4 @@
-# Functions in Python
+# Functions
 
 Functions are reusable blocks of code that help organize your programs, avoid repetition, and make your code easier to read and maintain. You can use functions to group related actions, perform calculations, or handle specific tasks.
 
