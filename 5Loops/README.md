@@ -81,5 +81,3 @@ Use while loops to make a program menu. This menu should give the user 2 differe
 Write a program that uses a `for` loop to search for something in a list. For example, ask the user for a name and check if that name is in a list of names. Print a message if the name is found or not found.
 
 *Hint: Try making a list of names first. Have a variable input so the user can search for the any name they'd like. Include a boolean that identifies if the name is found or not found. Start that boolean at False.
-
----
