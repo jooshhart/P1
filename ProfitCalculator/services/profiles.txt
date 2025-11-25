@@ -1,0 +1,57 @@
+{
+    "Jamblolaiah": {
+        "income": [],
+        "expenses": []
+    },
+    "Benji": {
+        "income": [],
+        "expenses": []
+    },
+    "Connor": {
+        "income": [],
+        "expenses": []
+    },
+    "Jessica": {
+        "income": [],
+        "expenses": []
+    },
+    "Correy": {
+        "income": [],
+        "expenses": []
+    },
+    "Jonathan": {
+        "income": [],
+        "expenses": []
+    },
+    "Brother": {
+        "income": [],
+        "expenses": []
+    },
+    "Sister": {
+        "income": [],
+        "expenses": []
+    },
+    "Cambodia": {
+        "income": [],
+        "expenses": []
+    },
+    "Derelict": {
+        "income": [],
+        "expenses": []
+    },
+    "Country": {
+        "income": [],
+        "expenses": []
+    },
+    "Aud": {
+        "income": [
+            {
+                "category": "Job",
+                "name": "Substitute",
+                "amount": "500",
+                "frequency": "Weekly"
+            }
+        ],
+        "expenses": []
+    }
+}
